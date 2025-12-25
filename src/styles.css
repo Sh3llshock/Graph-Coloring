@@ -1,0 +1,24 @@
+.left-pane {
+    -fx-background-color: lightblue;
+    -fx-text-fill: darkblue;
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.right-pane {
+    -fx-background-color: lightgreen;
+    -fx-text-fill: darkgreen;
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.left-column {
+    -fx-background-color: lightblue;
+}
+
+.right-column {
+    -fx-background-color: lightgreen;
+}
