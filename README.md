@@ -1,14 +1,31 @@
-# Graph Colouring
+# Graph Coloring
 
+Interactive graph coloring tool and algorithm playground.
+Build, load, and color graphs with classic heuristics and exact search,
+then compare results (colors used, time, conflicts) on the same instance.
 
+## Features
 
-## Getting started
+- Run multiple algorithms:
+  - DSATUR 
+  - Jones–Plassmann
+  - Backtracking (exact, optional cutoffs)
+  - Brute-force for small graphs
+- Draw graphs or import from file (edge list / adjacency list).
+- Gamemodes such as classic, random and undo for interactive play
+- Compare results: number of colors, conflicts, runtime.
+- Visualize colorings on the graph; highlight conflicts.
+- Scoring system based on time and correctness of each move 
 
-The program can be run through the main method in the Launcher class;
+## Background
 
-the following VM args are necessary: --module-path "C:\Users\User\Documents\Java libraries\javafx-sdk-23.0.1\lib" --add-modules javafx.controls,javafx.fxml
+Graph coloring assigns a color (integer label) to each vertex so that
+adjacent vertices receive different colors. The goal is to minimize the number
+of colors (the chromatic number). The problem is NP-hard, so heuristics are
+common for large graphs, while exact search is used on smaller instances.
 
-## Using the program
+## Tech used
 
-The initial menu can be navigated via using the arrow keys and selecting a given option using the enter key.
-Once you've chosen a gamemode further instructions are automatically provided
+- Language: **Java** (Java 17+)
+- UI: **JavaFX**
+- Build: **Gradle** (wrapper) or **Maven** (optional)
